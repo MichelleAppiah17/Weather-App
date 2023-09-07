@@ -1,0 +1,48 @@
+.weatherCard{
+    background-color:#5b548a;
+    color: antiquewhite;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.searchBar, input{
+    background: antiquewhite;
+    border-radius: 10px;
+    height: 40px;
+    width: 30em;
+    border: 0;
+    outline: 0;
+}
+.searchBar, button{
+    background: none;
+    border: none;
+}
+input,::placeholder{
+    text-align: center;
+}
+.weatherIcon{
+    padding-top: 40px;
+}
+.weatherCard, h1{
+    font-size: 80px;
+}
+.weatherCard, h2{
+    font-size: 45px;
+}
+.weather{
+    line-height: 20px;
+}
+.weatherDetails{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    line-height: 1px;
+}
