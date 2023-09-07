@@ -3,6 +3,7 @@ const apiUrl = "https://api.weatherapi.com/v1/current.json?&q=";
 
 const searchBox = document.querySelector(".searchBar input");
 const searchBtn = document.querySelector(".searchBar button");
+const weather_icon = document.querySelector(".weatherIcon");
 
 async function checkWeather(location){
     const response = await fetch(apiUrl + location + `&key=${apiKey}`);
@@ -14,6 +15,7 @@ async function checkWeather(location){
     document.querySelector(".temp").innerHTML =Math.round(data.current.temp_c ) + "°C";
     document.querySelector(".humidity").innerHTML = data.current.humidity + "%";
     document.querySelector(".wind").innerHTML = data.current.wind_degree + "km/h";
+    
 }
 
 searchBtn.addEventListener("click", ()=>{
