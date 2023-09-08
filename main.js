@@ -16,6 +16,20 @@ async function checkWeather(location){
     document.querySelector(".humidity").innerHTML = data.current.humidity + "%";
     document.querySelector(".wind").innerHTML = data.current.wind_degree + "km/h";
     
+    if(data.current.condition.text == "clear"){
+        weather_icon.src = "images/clear.png";
+    } else if(data.current.condition.text == "cloud"){
+        weather_icon.src = "images/Cloudy.png";
+    }else if(data.current.condition.text == "partly cloudy"){
+        weather_icon.src = "images/partlyCloudy.png";
+    }else if(data.current.condition.text == "rainy"){
+        weather_icon.src = "images/rainy.png";
+    }else if(data.current.condition.text == "sunny"){
+        weather_icon.src = "images/sunny.png";
+    }
+
+    document.querySelector(".weather").style.display = "block";
+    
 }
 
 searchBtn.addEventListener("click", ()=>{

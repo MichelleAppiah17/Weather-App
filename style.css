@@ -46,3 +46,10 @@ input,::placeholder{
     text-align: left;
     line-height: 1px;
 }
+.weather{
+    display: none;
+}
+.error{
+    display: none;
+    font-size: 8px;
+}
