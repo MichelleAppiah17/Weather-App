@@ -4,6 +4,9 @@ const apiUrl = "https://api.weatherapi.com/v1/forecast.json?&q=";
 const searchBox = document.querySelector(".searchBar input");
 const searchBtn = document.querySelector(".searchBar button");
 const weather_icon = document.querySelector(".weatherIcon");
+const todayIcon = document.querySelectorAll(".todayIcon");
+const today_Time = document.querySelectorAll(".todayTime");
+const today_Temp =  document.querySelectorAll(".todayTemp")
 
 async function checkWeather(location){
     const response = await fetch(apiUrl + location + `&key=${apiKey}`);
@@ -17,7 +20,14 @@ async function checkWeather(location){
     document.querySelector(".humidity").innerHTML = data.current.humidity + "%";
     document.querySelector(".wind").innerHTML = data.current.wind_degree + "km/h";
     document.querySelector(".windDirection").innerHTML = data.current.wind_dir;
-    
+
+    today_Time.forEach( today_Time =>{
+      today_Time.innerHTML = data.forecast.forecastday[0].hour.time;
+    });
+
+    today_Temp.forEach( todayTemp =>{
+      todayTemp.innerHTML =  data.forecast.forecastday[0].hour.temp_c;
+    });
 
     document.querySelector(".weather").style.display = "block";
     

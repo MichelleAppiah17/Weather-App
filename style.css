@@ -2,6 +2,7 @@
 .weatherCard{
     background: linear-gradient(to right,rgba(10, 123, 175, 0.3),rgba(13, 13, 228, 0.5));
     color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
 .searchBar{
@@ -82,8 +83,8 @@ h6{
 }
 
 .today{
-    background-color: rgb(102, 176, 236);
-    box-shadow:0px 4px 4px rgba(0,0,0,0.35) ;
+    background: linear-gradient(to right,rgba(147, 168, 207, 0.2),rgba(237, 237, 243, 0.4));
+    box-shadow:0px 4px 4px rgba(0,0,0,0.1) ;
     border-radius: 5px;
     color: rgb(4, 43, 43);
     display: flex;
@@ -106,7 +107,7 @@ h6{
 .todayCards{
     height: 7em;
     width: 5em;
-    background: linear-gradient(to right,rgba(230, 222, 222, 0.3),rgba(237, 237, 243, 0.3));
+    background: linear-gradient(to right,rgba(230, 222, 222, 0.7),rgba(237, 237, 243, 0.1));
     border-radius: 10px;
     box-shadow:0px 4px 4px rgba(0,0,0,0.35) ;
 }
@@ -117,4 +118,10 @@ h6{
     justify-content: center;
     align-items: center;
     line-height: 2px;
+}
+.todayTime{
+    color:brown
+}
+.todayTemp{
+    margin-bottom: 10px;
 }
