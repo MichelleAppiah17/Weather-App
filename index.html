@@ -9,34 +9,108 @@
 <body>
     <div class="weatherCard">
         <div class="searchBar" >
-            <input type="text" placeholder="Enter location name">
+            <input type="text" class="locationInput" placeholder="Enter location name">
             <button><img src="images/search.png" style="height: 20px; width: 20px;"></button>
         </div>
         <div class="error">
             <p>Location name not recognized</p>
         </div>
         <div class="weather">
-            <img src="images/rainbg.png" class="weatherIcon" style="padding-top: 10px;">
-            <h1 class="temp">22°C</h1>
-            <h2 class="location">london</h2>
+            <div class="mainDetails">
+                <img src="images/rainbg.png" class="weatherIcon" style="padding-top: 10px;">
+                <h1 class="temp">22°C</h1>
+                <h4 class="location">london</h4>  
+            </div> 
             <div class="weatherDetails">        
-                <div class="col">
-                    <img src="images/wind.png" style="height: 4em; width: 4em;">
-                  <div>
-                    <h6 class="wind">20 km/h</h6>
-                    <h6>Wind</h6>
-                  </div> 
+                <div class="columnCards">
+                    <div class="columnElements">
+                        <img src="images/windSpeed.png" style="height: 2em; width: 2em;">
+                        <h6 class="wind">20 km/h</h6>
+                        <p>Wind</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="images/humidity.png" style="height: 3em; width: 3em;">
-                 <div>
-                    <h6 class="humidity">30%</h6>
-                    <h6>Humidity</h6>
-                 </div> 
+                <div class="columnCards">
+                    <div class="columnElements">
+                        <img src="images/humidity.png" style="height: 2em; width: 2em;">
+                        <h6 class="humidity">30%</h6>
+                        <p>Humidity</p>
+                    </div>
                 </div>
-                
-            </div>  
-        </div>     
+                <div class="columnCards">
+                    <div class="columnElements">
+                        <img src="images/windDir.png" style="height: 2em; width: 2em;">
+                        <h6 class="windDirection">30%</h6>
+                        <p>w.Direction</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="todays">
+                <div class="today">
+                    <p>Today</p>
+                    <div class="7Days">
+                        <button class="daysBtn">7 days >></button>
+                    </div>
+                </div>
+            </div>
+            <div class="daily">
+                <div class="todayCards">
+                    <div class="todayElements">
+                        <h6 class="todayTemp">30°</h6>
+                        <img src="images/rainy.png" style="height: 2em; width: 2em;">
+                        <p class="todayTime">10:00</p>
+                    </div>
+                </div>
+                <div class="todayCards">
+                    <div class="todayElements">
+                        <h6 class="todayTemp">30°</h6>
+                        <img src="images/rainy.png" style="height: 2em; width: 2em;">
+                        <p class="todayTime">10:00</p>
+                    </div>
+                </div>
+                <div class="todayCards">
+                    <div class="todayElements">
+                        <h6 class="todayTemp">30°</h6>
+                        <img src="images/rainy.png" style="height: 2em; width: 2em;">
+                        <p class="todayTime">10:00</p>
+                    </div>
+                </div>
+                <div class="todayCards">
+                    <div class="todayElements">
+                        <h6 class="todayTemp">30°</h6>
+                        <img src="images/rainy.png" style="height: 2em; width: 2em;">
+                        <p class="todayTime">10:00</p>
+                    </div>
+                </div>
+                <div class="todayCards">
+                    <div class="todayElements">
+                        <h6 class="todayTemp">30°</h6>
+                        <img src="images/rainy.png" style="height: 2em; width: 2em;">
+                        <p class="todayTime">10:00</p>
+                    </div>
+                </div>
+                <div class="todayCards">
+                    <div class="todayElements">
+                        <h6 class="todayTemp">30°</h6>
+                        <img src="images/rainy.png" style="height: 2em; width: 2em;">
+                        <p class="todayTime">10:00</p>
+                    </div>
+                </div>
+                <div class="todayCards">
+                    <div class="todayElements">
+                        <h6 class="todayTemp">30°</h6>
+                        <img src="images/rainy.png" style="height: 2em; width: 2em;">
+                        <p class="todayTime">10:00</p>
+                    </div>
+                </div>
+                <div class="todayCards">
+                    <div class="todayElements">
+                        <h6 class="todayTemp">30°</h6>
+                        <img src="images/rainy.png" style="height: 2em; width: 2em;">
+                        <p class="todayTime">10:00</p>
+                    </div>
+                </div>
+            </div>     
+        </div>   
     </div>
     <script src="main.js" ></script>
 </body>

@@ -1,16 +1,19 @@
-.weatherCard{
-    background-color:#5b548a;
-    color: antiquewhite;
-    border-radius: 20px;
-    padding: 25px;
-    text-align: center;
-}
 
-.searchBar, input{
+.weatherCard{
+    background: linear-gradient(to right,rgba(10, 123, 175, 0.3),rgba(13, 13, 228, 0.5));
+    color: antiquewhite;
+    min-height: 100vh;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.locationInput{
     background: antiquewhite;
     border-radius: 10px;
-    height: 40px;
-    width: 30em;
+    height: 20px;
     border: 0;
     outline: 0;
 }
@@ -18,33 +21,57 @@
     background: none;
     border: none;
 }
-input,::placeholder{
+.locationInput,::placeholder{
     text-align: center;
 }
 .weatherIcon{
     padding-top: 40px;
 }
-.weatherCard, h1{
-    font-size: 80px;
+h1{
+    font-size: 100px;
 }
-.weatherCard, h2{
-    font-size: 45px;
+h4{
+    margin-top: 10px;
+    font-size: 35px;
 }
-.weather{
-    line-height: 20px;
+.mainDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1px;
 }
 .weatherDetails{
+    box-shadow:0px 4px 4px rgba(0,0,0,0.35) ;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 20px;
-    margin-top: 50px;
+    margin-top: 5px;
 }
-.col{
+p{
+    font-size: 20px;
+}
+h6{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(61, 37, 5);
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+.columnCards{
+    height: 7em;
+    width: 8em;
+    background: linear-gradient(to right,rgba(83, 71, 71, 0.1),rgba(0,0,255,0.1));
+    border-radius: 10px;
+    box-shadow:0px 4px 4px rgba(0,0,0,0.35) ;
+}
+.columnElements{
+    padding-top: 5px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: left;
-    line-height: 1px;
+    line-height: 2px;
 }
 .weather{
     display: none;
@@ -52,4 +79,42 @@ input,::placeholder{
 .error{
     display: none;
     font-size: 8px;
+}
+
+.today{
+    background-color: rgb(102, 176, 236);
+    box-shadow:0px 4px 4px rgba(0,0,0,0.35) ;
+    border-radius: 5px;
+    color: rgb(4, 43, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.daysBtn{
+    background: none;
+    border: none;
+}
+.daily{
+    box-shadow:0px 4px 4px rgba(0,0,0,0.35) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+.todayCards{
+    height: 7em;
+    width: 5em;
+    background: linear-gradient(to right,rgba(230, 222, 222, 0.3),rgba(237, 237, 243, 0.3));
+    border-radius: 10px;
+    box-shadow:0px 4px 4px rgba(0,0,0,0.35) ;
+}
+.todayElements{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2px;
 }
