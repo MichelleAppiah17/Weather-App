@@ -18,9 +18,13 @@
     border: 0;
     outline: 0;
 }
-.searchBar, button{
-    background: none;
-    border: none;
+.searchBtn{
+    height: 25px;
+    width: 40px;
+    margin-left: 10px;
+    background-color: rgb(227, 227, 236,0.5);
+    border-radius: 20px;
+    border-color:rgb(238, 238, 245) ;
 }
 .locationInput,::placeholder{
     text-align: center;
@@ -77,11 +81,6 @@ h6{
 .weather{
     display: none;
 }
-.error{
-    display: none;
-    font-size: 8px;
-}
-
 .today{
     background: linear-gradient(to right,rgba(147, 168, 207, 0.2),rgba(237, 237, 243, 0.4));
     box-shadow:0px 4px 4px rgba(0,0,0,0.1) ;
